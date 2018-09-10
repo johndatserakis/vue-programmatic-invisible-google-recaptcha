@@ -45,7 +45,7 @@ Here's a breakdown of the steps you go through when using this library:
 
 ### Usage Example
 
-```html
+```js
 import VueProgrammaticInvisibleGoogleRecaptcha from 'vue-programmatic-invisible-google-recaptcha'
 Vue.component('vue-programmatic-invisible-google-recaptcha', VueProgrammaticInvisibleGoogleRecaptcha)
 ```
@@ -101,7 +101,7 @@ Note - call these methods through the `ref` you set up with your component. Exam
 | method    | parameters  | description                    |
 |---------|-------|--------------------------------|
 | execute | none | Used to gather the token. If Google decides that the user needs to complete a test they'll do it here. |
-| reset | none | Used to gather the token. If Google decides that the user needs to complete a test they'll do it here. |
+| reset | none | Used to reset the reCAPTCHA instance. |
 
 ### Events
 
