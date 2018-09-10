@@ -1,0 +1,60 @@
+{
+  "name": "vue-programmatic-invisible-google-recaptcha",
+  "version": "1.0.0",
+  "description": "A simple invisible Google reCAPTCHA component focused solely on programmatic invocation.",
+  "author": "John Datserakis <johndatserakis@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johndatserakis/vue-programmatic-invisible-google-recaptcha.git"
+  },
+  "bugs": {
+    "url": "https://github.com/johndatserakis/vue-programmatic-invisible-google-recaptcha/issues"
+  },
+  "keywords": [
+    "vue",
+    "simple",
+    "google",
+    "recaptcha",
+    "invisible",
+    "programmatic"
+  ],
+  "main": "dist/vue-programmatic-invisible-google-recaptcha.umd.js",
+  "module": "dist/vue-programmatic-invisible-google-recaptcha.esm.js",
+  "unpkg": "dist/vue-programmatic-invisible-google-recaptcha.min.js",
+  "browser": {
+    "./sfc": "src/vue-programmatic-invisible-google-recaptcha.vue"
+  },
+  "scripts": {
+    "watch": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "watch:vue-cli": "vue serve ./src/vue-programmatic-invisible-google-recaptcha.vue",
+    "build": "rm -rf ./dist npm run build:unpkg & npm run build:es & npm run build:umd & npm run build:unpkg",
+    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/vue-programmatic-invisible-google-recaptcha.umd.js",
+    "build:es": "rollup --config build/rollup.config.js --format es --file dist/vue-programmatic-invisible-google-recaptcha.esm.js",
+    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/vue-programmatic-invisible-google-recaptcha.min.js",
+    "build:example": "rm -rf ./docs && cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "cross-env": "^5.1.6",
+    "css-loader": "^0.28.7",
+    "file-loader": "^1.1.4",
+    "minimist": "^1.2.0",
+    "node-sass": "^4.5.3",
+    "rollup": "^0.57.1",
+    "rollup-plugin-buble": "^0.19.2",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-uglify-es": "0.0.1",
+    "rollup-plugin-vue": "^3.0.0",
+    "sass-loader": "^7.0.1",
+    "vue": "^2.5.16",
+    "vue-loader": "^13.0.5",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1",
+    "html-webpack-plugin": "^3.2.0"
+  }
+}
