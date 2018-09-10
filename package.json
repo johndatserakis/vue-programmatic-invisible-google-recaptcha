@@ -1,6 +1,6 @@
 {
   "name": "vue-programmatic-invisible-google-recaptcha",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple invisible Google reCAPTCHA component focused solely on programmatic invocation.",
   "author": "John Datserakis <johndatserakis@gmail.com>",
   "license": "MIT",
