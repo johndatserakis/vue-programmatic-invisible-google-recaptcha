@@ -38,6 +38,10 @@ This is a simple component that helps deal with an invisible Google reCAPTCHA th
 
 Here's a breakdown of the steps you go through when using this library:
 - Load the Google reCAPTCHA library using the provided `script` tag.
+- Whenever you'd like, invoke the reCAPTCHA using `this.$refs.invisibleRecaptcha1.execute()` method (replacing `invisibleRecaptcha1` with the `ref` name you set).
+- Google will either decide to show a challange or not. Either way, you'll get the `recaptchaToken` in the registered `recaptchaCallback` event. Make sure to register for that.
+- Use that token to verify in your backend.
+- Call the method again if you'd like to get a new token.
 
 ### Usage Example
 
