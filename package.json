@@ -1,15 +1,15 @@
 {
   "name": "vue-programmatic-invisible-google-recaptcha",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A simple invisible Google reCAPTCHA component focused solely on programmatic invocation.",
   "author": "John Datserakis <johndatserakis@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/johndatserakis/vue-programmatic-invisible-google-recaptcha.git"
+    "url": "git+https://github.com/promosis/vue-programmatic-invisible-google-recaptcha.git"
   },
   "bugs": {
-    "url": "https://github.com/johndatserakis/vue-programmatic-invisible-google-recaptcha/issues"
+    "url": "https://github.com/promosis/vue-programmatic-invisible-google-recaptcha/issues"
   },
   "keywords": [
     "vue",
