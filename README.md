@@ -39,7 +39,7 @@ This is a simple component that helps deal with an invisible Google reCAPTCHA th
 Here's a breakdown of the steps you go through when using this library:
 - Load the Google reCAPTCHA library using the provided `script` tag.
 - Whenever you'd like, invoke the reCAPTCHA using `this.$refs.invisibleRecaptcha1.execute()` method (replacing `invisibleRecaptcha1` with the `ref` name you set).
-- Google will either decide to show a challange or not. Either way, you'll get the `recaptchaToken` in the registered `recaptchaCallback` event. Make sure to register for that.
+- Google will either decide to show a challange or not. Either way, you'll get the `recaptchaToken` in the registered `recaptcha-callback` event. Make sure to register for that.
 - Use that token to verify in your backend.
 - Call the method again if you'd like to get a new token.
 
@@ -62,7 +62,7 @@ Vue.component('vue-programmatic-invisible-google-recaptcha', VueProgrammaticInvi
     :badgePosition="'left'"
     :showBadgeMobile="false"
     :showBadgeDesktop="true"
-    @recaptchaCallback="recaptchaCallback"
+    @recaptcha-callback="recaptchaCallback"
 ></vue-programmatic-invisible-google-recaptcha>
 
 <!-- Where you want to invoke the reCAPTCHA -->
@@ -105,9 +105,9 @@ Note - call these methods through the `ref` you set up with your component. Exam
 
 ### Events
 
-| event    | value  | description                    |
+| event    | parameter value  | description                    |
 |---------|-------|--------------------------------|
-| recaptchaCallback | String | This even gets emitted when the token has been aquired. You can then use this token to verify the user on your backend. |
+| recaptcha-callback | String | This even gets emitted when the token has been aquired. You can then use this token to verify the user on your backend. |
 
 ### Development
 

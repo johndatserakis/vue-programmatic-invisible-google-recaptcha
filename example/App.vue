@@ -73,7 +73,7 @@
             :badgePosition="'left'"
             :showBadgeMobile="false"
             :showBadgeDesktop="true"
-            @recaptchaCallback="recaptchaCallback"
+            @recaptcha-callback="recaptchaCallback"
         ></vue-programmatic-invisible-google-recaptcha>
 
     </div>

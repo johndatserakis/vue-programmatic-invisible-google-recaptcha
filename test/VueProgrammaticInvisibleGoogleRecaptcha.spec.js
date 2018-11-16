@@ -57,8 +57,8 @@ describe('VueProgrammaticInvisibleGoogleRecaptcha.vue', () => {
         // library. When you load the component, it should attempt to grab the loaded
         // reCAPTCHA library .js from Google. If it fails the first time, it keeps trying.
         // This is tracked in the checkIntervalRunCount variable. So, because we're not actually loading
-        // the code from Google in the tests, after 2 seconds the checkIntervalRunCount should be at 0,
-        // that'll mean its check is working correctly.
+        // the code from Google in the tests, after 2 seconds the checkIntervalRunCount should be at least greater than
+        // 0, that'll mean its check is working correctly.
         await new Promise(resolve => {
             setTimeout(() => {
                 console.log(wrapper.vm.checkIntervalRunCount)

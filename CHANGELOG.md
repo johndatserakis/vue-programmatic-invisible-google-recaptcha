@@ -1,9 +1,13 @@
 # CHANGELOG.md
 
-## 1.0.0 (2018-09-10)
+## 2.0.0 (2018-11-16)
 
-Initial Release
+- Updating emitted events to be snake-case instead of camelCase for proper Vue compatibility.
 
 ## 1.0.4 (2018-09-10)
 
-Added tests
+- Added tests
+
+## 1.0.0 (2018-09-10)
+
+- Initial Release

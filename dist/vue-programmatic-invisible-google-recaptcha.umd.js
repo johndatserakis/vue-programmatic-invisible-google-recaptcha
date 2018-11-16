@@ -63,7 +63,7 @@
             },
             callback: function callback (recaptchaToken) {
                 // Emit an event called recaptchaCallback with the recaptchaToken as payload
-                this.$emit('recaptchaCallback', recaptchaToken);
+                this.$emit('recaptcha-callback', recaptchaToken);
 
                 // Reset the recaptcha widget so you can execute it again
                 this.reset();
