@@ -1,7 +1,10 @@
 // rollup.config.js
+// https://vuejs.org/v2/cookbook/packaging-sfc-for-npm.html
 import vue from 'rollup-plugin-vue';
 import buble from 'rollup-plugin-buble';
-import uglify from 'rollup-plugin-uglify-es';
+import commonjs from 'rollup-plugin-commonjs';
+import resolve from 'rollup-plugin-node-resolve';
+import { terser } from 'rollup-plugin-terser';
 import minimist from 'minimist';
 
 const argv = minimist(process.argv.slice(2));
@@ -16,6 +19,12 @@ const config = {
         }
     },
     plugins: [
+        commonjs(),
+        resolve({
+            jsnext: true,
+            main: true,
+            browser: true,
+        }),
         vue({
             css: true,
             compileTemplate: true,
@@ -27,7 +36,7 @@ const config = {
 
 // Only minify browser (iife) version
 if (argv.format === 'iife') {
-    config.plugins.push(uglify());
+    config.plugins.push(terser());
 }
 
 export default config;

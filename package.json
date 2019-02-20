@@ -1,6 +1,6 @@
 {
   "name": "vue-programmatic-invisible-google-recaptcha",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A simple invisible Google reCAPTCHA component focused solely on programmatic invocation.",
   "author": "John Datserakis <johndatserakis@gmail.com>",
   "license": "MIT",
@@ -51,8 +51,9 @@
     "node-sass": "^4.5.3",
     "rollup": "^0.57.1",
     "rollup-plugin-buble": "^0.19.2",
+    "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-node-resolve": "^3.3.0",
-    "rollup-plugin-uglify-es": "0.0.1",
+    "rollup-plugin-terser": "^4.0.3",
     "rollup-plugin-vue": "^3.0.0",
     "sass-loader": "^7.0.1",
     "vue": "^2.5.16",
