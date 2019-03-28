@@ -4,7 +4,7 @@ A simple invisible Google reCAPTCHA component focused solely on programmatic inv
 
 <p align="left">
   <a href="https://www.npmjs.com/package/vue-programmatic-invisible-google-recaptcha"><img src="https://img.shields.io/npm/v/vue-programmatic-invisible-google-recaptcha.svg" alt="NPM Version"></a>
-  <a href="https://www.npmjs.com/package/vue-programmatic-invisible-google-recaptcha"><img src="https://img.shields.io/npm/dt/vue-programmatic-invisible-google-recaptcha.svg" alt="NPM Downloads"></a>
+  <a href="https://www.npmjs.com/package/vue-programmatic-invisible-google-recaptcha"><img src="https://img.shields.io/npm/dm/vue-programmatic-invisible-google-recaptcha.svg" alt="NPM Downloads"></a>
   <a href="http://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
   <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fpromosis%2Fvue-programmatic-invisible-google-recaptcha&text=Check%20out%20vue-programmatic-invisible-google-recaptcha%20on%20GitHub&via=promosis">
   <img src="https://img.shields.io/twitter/url/https/github.com/promosis/vue-programmatic-invisible-google-recaptcha.svg?style=social" alt="Tweet"></a>
@@ -118,15 +118,17 @@ npm install
 # serve with hot reload
 npm run watch
 
+# run the tests
+npm run test
+
 # build demo page
 npm run build:example
 
-# build
-npm run build
+# build library
+npm run build:library
 
-# publish to npm
-npm version patch
-npm publish
+# build everything and run tests
+npm run build
 ```
 
 ### Other
