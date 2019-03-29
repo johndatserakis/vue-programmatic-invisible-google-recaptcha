@@ -1,6 +1,6 @@
 {
   "name": "vue-programmatic-invisible-google-recaptcha",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "A simple invisible Google reCAPTCHA component focused solely on programmatic invocation.",
   "author": "John Datserakis <johndatserakis@gmail.com>",
   "license": "MIT",
@@ -25,9 +25,9 @@
   "scripts": {
     "watch": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "npm run test && npm run build:example && npm run build:library",
-    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/vue-navigation-bar.umd.js",
-    "build:es": "rollup --config build/rollup.config.js --format es --file dist/vue-navigation-bar.esm.js",
-    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/vue-navigation-bar.min.js",
+    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/vue-programmatic-invisible-google-recaptcha.umd.js",
+    "build:es": "rollup --config build/rollup.config.js --format es --file dist/vue-programmatic-invisible-google-recaptcha.esm.js",
+    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/vue-programmatic-invisible-google-recaptcha.min.js",
     "build:library": "rm -rf ./dist npm run build:unpkg & npm run build:es & npm run build:umd & npm run build:unpkg",
     "build:example": "rm -rf ./docs && cross-env NODE_ENV=production webpack --progress --hide-modules",
     "test": "jest"
