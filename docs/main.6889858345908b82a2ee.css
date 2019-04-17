@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+html {
+  width: 100%;
+  font-size: 18px;
+  color: #333;
+}
+body {
+  margin: 0;
+  height: 100%;
+  height: 100vh;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+#app {
+  height: 100%;
+  height: 100vh;
+  width: 100%;
+  line-height: 1.5;
+}
+.install-text {
+  background: #eee;
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+@media (min-width: 992px) {
+.install-text {
+      margin-bottom: 0;
+}
+}
+.btn {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.tokenDisplay {
+  overflow: scroll;
+}
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+@keyframes octocat-wave {
+0%, 100% {
+    transform: rotate(0);
+}
+20%, 60% {
+    transform: rotate(-25deg);
+}
+40%, 80% {
+    transform: rotate(10deg);
+}
+}
+@media (max-width: 500px) {
+.github-corner:hover .octo-arm {
+    animation: none;
+}
+.github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+}
+}
+
+.grecaptcha-badge {
+  z-index: 1000;
+}
+.g-recaptcha--left .grecaptcha-badge {
+  width: 70px !important;
+  overflow: hidden;
+  transition: all 0.2s ease !important;
+  left: 0px;
+}
+.g-recaptcha--left .grecaptcha-badge:hover {
+  width: 256px !important;
+}
+@media (max-width: 992px) {
+.g-recaptcha--mobile-hidden .grecaptcha-badge {
+    display: none;
+}
+}
+@media (min-width: 992px) {
+.g-recaptcha--desktop-hidden .grecaptcha-badge {
+    display: none;
+}
+}
+

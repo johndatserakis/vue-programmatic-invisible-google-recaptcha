@@ -30,7 +30,11 @@ yarn add vue-programmatic-invisible-google-recaptcha
 
 Or you can include it through the browser at the bottom of your page:
 
-`<script src="https://unpkg.com/vue-programmatic-invisible-google-recaptcha"></script>`
+```html
+<!-- Please note if you're using the browser method you're going to want to adjust the version number as needed. -->
+
+<script src="https://unpkg.com/vue-programmatic-invisible-google-recaptcha@2.1.2/dist/vue-programmatic-invisible-google-recaptcha.min.js"></script>
+```
 
 ### About
 
