@@ -1,6 +1,6 @@
 {
   "name": "vue-programmatic-invisible-google-recaptcha",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "description": "A simple invisible Google reCAPTCHA component focused solely on programmatic invocation.",
   "author": "John Datserakis <johndatserakis@gmail.com>",
   "license": "MIT",
@@ -22,6 +22,7 @@
   "main": "dist/vue-programmatic-invisible-google-recaptcha.umd.js",
   "module": "dist/vue-programmatic-invisible-google-recaptcha.esm.js",
   "unpkg": "dist/vue-programmatic-invisible-google-recaptcha.min.js",
+  "browser": "src/vue-programmatic-invisible-google-recaptcha.vue",
   "scripts": {
     "watch": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "npm run test && npm run build:example && npm run build:library",
